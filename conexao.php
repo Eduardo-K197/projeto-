@@ -2,7 +2,7 @@
     $servidor="localhost";
     $usuario="root";
     $senha="";
-    $banco="cadastro";
+    $banco="Cadastro";
 
     $conexao=mysqli_connect($servidor, $usuario, $senha, $banco);
     if(!$conexao){
