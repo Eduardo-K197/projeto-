@@ -1,8 +1,8 @@
 <?php
-    $servidor="107.21.4.106";
-    $usuario="sbcpa_user_sipa";
-    $senha="@*SbCpA102030##";
-    $banco="ed_k197";
+    $servidor="127.0.0.1";
+    $usuario="root";
+    $senha="";
+    $banco="Cadastro";
 
     $conexao=mysqli_connect($servidor, $usuario, $senha, $banco);
     if(!$conexao){
