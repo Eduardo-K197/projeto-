@@ -1,5 +1,5 @@
 <?php
-    $servidor="localhost";
+    $servidor="18.206.125.194";
     $usuario="Eduardo";
     $senha="353331499Eduardo";
     $banco="cadastro";
