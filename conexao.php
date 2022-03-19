@@ -1,11 +1,16 @@
-<?php
-    $servidor="18.206.125.194";
-    $usuario="Eduardo";
-    $senha="353331499Eduardo";
-    $banco="cadastro";
+<?
+	$ usuario = "Eduardo" ;
+	$ senha = "353331499Eduardo" ;
+	$ dbname = "cadastro" ;
+	$ servirdor = "localhost" ;
 
-    $conexao=mysqli_connect($servidor, $usuario, $senha, $banco);
-    if(!$conexao){
-        die("Houve um erro: ".mysqli_connect_error());
-    }
+	$ conexao = mysql_connect ( $ usuario , $ senha, $ servirdor ) or die ( "Não pode conectar: ​​" . mysql_error ());
+	mysql_select_db ( $ dbname , $ conexao );
+	mysql_set_charset ( 'utf8' );
+
+	$ Dados = data ( "Ymd" );
+	$ Hora = data ( "H:i:s" );
+
+	session_start ();
+	$ Usuario = $ _SESSION [ "usuarioEduardo" ];
 ?>
