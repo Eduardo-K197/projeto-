@@ -1,5 +1,5 @@
 <?php
-    include ("conexao.php");
+    include "conexao.php";
 
     $nome=$_POST['nome'];
     $nascimento=$_POST['nascimento'];
@@ -11,6 +11,7 @@
 
     $sql="insert into pessoas(nome, nascimento, sexo, peso, altura, nacionalidade, profissão) 
     VALUE ('$nome', '$nascimento', '$sexo', '$peso', '$altura', '$nacionalidade', '$profissão')";
+
 
 if(mysqli_query($conexao, $sql)){
         echo "Usúario cadastrado com sucesso";

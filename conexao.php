@@ -1,6 +1,6 @@
 <?php
 
-$servidor="localhots";
+$servidor="localhost";
 $usuario="Eduardo";
 $senha="353331499Eduardo";
 $banco="cadastro";
